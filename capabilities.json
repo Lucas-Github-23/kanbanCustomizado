@@ -1,0 +1,42 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Linhas / Fila",
+      "name": "rows",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Colunas / Categoria",
+      "name": "columns",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Dados do Cartão (Pedido, Data, etc.)",
+      "name": "values",
+      "kind": "Measure"
+    }
+  ],
+  "objects": {},
+  "dataViewMappings": [
+    {
+      "matrix": {
+        "rows": {
+          "for": {
+            "in": "rows"
+          }
+        },
+        "columns": {
+          "for": {
+            "in": "columns"
+          }
+        },
+        "values": {
+          "for": {
+            "in": "values"
+          }
+        }
+      }
+    }
+  ],
+  "privileges": []
+}

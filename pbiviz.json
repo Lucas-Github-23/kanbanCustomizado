@@ -1,0 +1,26 @@
+{
+  "visual": {
+    "name": "kanbanCustomizado",
+    "displayName": "KanbanCustomizado",
+    "guid": "kanbanCustomizado18F84F0877BB4367B6DF68F60073C6CC",
+    "visualClassName": "Visual",
+    "version": "1.0.0.0",
+    "description": "Visual de Kanban Customizado",
+    "supportUrl": "https://localhost",
+    "gitHubUrl": "https://github.com/lucas-github-23/kanbanCustomizado"
+  },
+  "apiVersion": "5.11.1",
+  "author": {
+    "name": "lucas",
+    "email": "lucas@example.com"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": [],
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": "",
+  "stringResources": [],
+  "version": "1.0.0.0"
+}
