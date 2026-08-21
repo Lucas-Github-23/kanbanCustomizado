@@ -188,7 +188,6 @@ export class Visual implements IVisual {
             const thRow = document.createElement("th");
             thRow.className = "kanban-header-row";
             
-            // Tratamento para não exibir "null" e respeitar a ordenação limpa da Fila
             const rawRowValue = rowHierarchy[rowIndex] ? String(rowHierarchy[rowIndex].value) : String(rowIndex + 1);
             thRow.innerText = (rawRowValue === "null" || rawRowValue === "undefined" || rawRowValue.trim() === "") ? "-" : rawRowValue;
             
@@ -283,7 +282,6 @@ export class Visual implements IVisual {
                         card.appendChild(codeEl);
                     }
 
-                    // --- ÁREA DE PROGRESSO E QUANTIDADE CONCLUÍDA ---
                     const progressWrapper = document.createElement("div");
                     progressWrapper.className = "progress-wrapper";
 
@@ -298,7 +296,7 @@ export class Visual implements IVisual {
                     progressBar.style.width = `${Math.min(100, Math.max(0, numericValue))}%`;
 
                     if (numericValue >= 100) {
-                        progressBar.style.backgroundColor = "#1b5e20";
+                        progressBar.style.backgroundColor = "#D33A77";
                     }
 
                     progressContainer.appendChild(progressBar);
